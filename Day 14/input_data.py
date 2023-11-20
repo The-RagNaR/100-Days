@@ -1,9 +1,9 @@
 Data=[
     {
-        'name': 'Instagram',
+        'name': 'Nisha Pandey',
         'follower_count': 346,
-        'description': 'Social media playform',
-        'country': 'United States',
+        'description': 'Instagram',
+        'country': 'Nepal',
     },
         
     {
