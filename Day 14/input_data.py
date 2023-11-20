@@ -14,10 +14,10 @@ Data=[
     },
     
     {
-        'name': 'Ariana Grande',
+        'name': 'Mahendra Singh Dhoni',
         'follower_count': 183,
-        'description': 'Musician and actress',
-        'country': 'United States',
+        'description': 'Cricketer',
+        'country': 'India',
     },
     {
         'name': 'Dwayne Johnson',
