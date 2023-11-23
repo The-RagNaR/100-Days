@@ -1,6 +1,6 @@
 from input_data import Data
 import random
-
+Score = 0
 def format_data(account):
     #Format the account data into printable format.
     account_name=account["name"]
@@ -8,10 +8,12 @@ def format_data(account):
     account_country=account["country"]
     return f"{account_name}, {account_descr}, from {account_country}."
 
-
+      
+      
+      
 Repeat = True
 while Repeat:
-      #Generate a random account
+      # Generate a random account
       choice_1 = random.randint(0,4)
       choice_2 = random.randint(0,4)
       while choice_2 == choice_1:
@@ -26,26 +28,31 @@ while Repeat:
 
 
       # Use if statement to check if user is correct.
-      # user_Choice = input("\n\nA or B\n")
-      # who_is_largest = 'a'
-      # if account_A['follower_count'] > account_B['follower_count']:
-      #       who_is_largest = "a"
-      # else:
-      #       who_is_largest = 'b'
-      # print(who_is_largest)
-      #Making account at position B become the next account at position A.
-      #Ask user for a guess.
-      #Check if user is correct.
-      # Get follower count of each account.
-
-      #Give user feedback on their guess.
-
-
-      #make a game rapeatable.
-      # print("Play again: y/n")
-      # replay = input().lower()
-      # if replay == "y":
-      #       Repeat = True
-      # elif replay == "n":
-      Repeat = False
-      # # Score keeping.
+      user_Choice = input("\n\nA or B\n").lower()
+      who_is_largest = 'a'
+      if account_A['follower_count'] > account_B['follower_count']:
+            who_is_largest = "a"
+      else:
+            who_is_largest = 'b'
+            
+      # Score Checking and giving score
+      
+      Score = 0  # initial Score
+      if user_Choice == who_is_largest:
+           Score += 1 
+      else:
+             False
+      
+      if game():
+            pass
+      else:
+            print('Well Played')
+            print(f'Your Score is: {Score}\n\n')
+      # make a game rapeatable.
+      print("Play again: y/n")
+      replay = input().lower()
+      if replay == "y":
+            Repeat = True
+      elif replay == "n":
+            break
+      # Score keeping.
