@@ -1,15 +1,13 @@
 from input_data import Data
 import random
-Score = 0
+Score = 0  # initial score
 def format_data(account):
     #Format the account data into printable format.
     account_name=account["name"]
     account_descr=account["description"]
     account_country=account["country"]
     return f"{account_name}, {account_descr}, from {account_country}."
-
-      
-Score = 0     
+   
 game = True 
 Repeat = True
 while Repeat:
