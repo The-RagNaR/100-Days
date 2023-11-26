@@ -9,8 +9,8 @@ def format_data(account):
     return f"{account_name}, {account_descr}, from {account_country}."
 
       
-      
-      
+Score = 0     
+game = True 
 Repeat = True
 while Repeat:
       # Generate a random account
@@ -37,22 +37,22 @@ while Repeat:
             
       # Score Checking and giving score
       
-      Score = 0  # initial Score
+      # initial Score
       if user_Choice == who_is_largest:
            Score += 1 
       else:
-             False
+            game = False
       
-      if game():
+      if game:
             pass
       else:
             print('Well Played')
             print(f'Your Score is: {Score}\n\n')
-      # make a game rapeatable.
-      print("Play again: y/n")
-      replay = input().lower()
-      if replay == "y":
-            Repeat = True
-      elif replay == "n":
-            break
-      # Score keeping.
+            # make a game rapeatable.
+            print("Play again: y/n")
+            replay = input().lower()
+            if replay == "y":
+                  Repeat = True
+                  Score = 0
+            elif replay == "n":
+                  break

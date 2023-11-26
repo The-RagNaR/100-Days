@@ -15,7 +15,7 @@ Data=[
     
     {
         'name': 'Mahendra Singh Dhoni',
-        'follower_count': 183,
+        'follower_count': 190,
         'description': 'Cricketer',
         'country': 'India',
     },
@@ -27,7 +27,7 @@ Data=[
     },
     {
         'name': 'Ariana Grande',
-        'follower_count': 183,
+        'follower_count': 185,
         'description': 'Musician and actress',
         'country': 'United States',
     }
